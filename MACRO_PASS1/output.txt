@@ -1,0 +1,37 @@
+   
+   
+   MNT    
+M1 2 2 1 1 
+M2 2 2 6 3 
+
+ KPDTAB    
+A AREG     
+B  -       
+U CREG     
+V DREG     
+
+
+ PNTAB     
+
+  X 1      
+  Y 2
+  A 3
+  B 4
+
+  P 1
+  Q 2
+  U 3
+  V 4
+
+ MDT
+
+MOVER (P, 3) (P, 1)
+ADD (P, 3) ='1'
+MOVER (P, 4) (P, 2)
+ADD (P, 3) ='5'
+MEND
+MOVER (P, 3) (P, 1)
+MOVER (P, 4) (P, 2)
+ADD (P, 3) ='15'
+ADD (P, 4) ='10'
+MEND
