@@ -1,4 +1,12 @@
 
+\
+
+
+
+///// NOT COMPETED 
+// DON'T USE IT IN PACTICLE 
+
+
 #include <bits/stdc++.h>
 using namespace std;
 class Scheduling_algorithm
