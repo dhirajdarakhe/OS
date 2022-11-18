@@ -1,0 +1,1 @@
+{"name":"Local: CPU_SJF","url":"d:\\zz_SEM_5\\lp1\\OS\\OS\\CPU_SJF.cpp","tests":[{"id":1668752212732,"input":"4\n1 3\n2 4\n1 2\n4 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\zz_SEM_5\\lp1\\OS\\OS\\CPU_SJF.cpp","group":"local","local":true}
