@@ -127,6 +127,8 @@ int main()
 //  TAT : Turn around time
 // WT : Waiting time
 
+
+//  >> non_ preemtive
 // Output
 
 // Process NO  AT  BT   CT   TAT  WT
@@ -138,3 +140,24 @@ int main()
 
 // Avg TAT : 6
 // Avg WT : 3
+
+
+
+/// >>> preemtive
+
+// Process NO  AT  BT   CT   TAT  WT   DONE  AT   BT
+
+//      P1                                    1   3   
+//      P2                                    2   4    
+//      P3     3    0     3             1      1   2   
+//      P4                                    4   4    
+
+
+// TIME Q = 2
+
+// Process NO  AT  BT   CT   TAT  WT
+
+//      P1      3   0    8    5   2  -1
+//      P2      7   0    12    8   4   -1
+//      P3      1   0    5    2   0    -1 
+//      P4      10   0    14    10   6
