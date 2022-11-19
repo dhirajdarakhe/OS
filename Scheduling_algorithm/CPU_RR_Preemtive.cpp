@@ -1,5 +1,5 @@
 
-// NOT_preemtive algorithm
+// Preemtive algorithm
 
 #include <bits/stdc++.h>
 using namespace std;
