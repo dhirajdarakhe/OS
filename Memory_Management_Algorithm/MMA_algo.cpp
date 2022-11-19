@@ -34,6 +34,8 @@ public:
         }
     }
 
+
+
     void nextFit(int a[], int b1[], int n, int m)
     {
         int blocks[n];
