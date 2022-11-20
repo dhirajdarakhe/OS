@@ -38,9 +38,9 @@ void rr(int at[], int bt[], int n)
         int pos = -1;
         for (int i = 0; i < n; ++i)
         {
-            if (done[i] == true && at1[i] <= minAT && minBT > bt1[i])
+            if (done[i] == true && at1[i] <= minAT)
             {
-                minBT = bt1[i];
+                minAT = at1[i];
                 pos = i;
             }
         }
@@ -115,54 +115,45 @@ int main()
     return 0;
 }
 
-// Input
+// Input  1 )
 
 // Enter the no of Process : 4
-// Enter the arrival time and brust time for process 1 :
-// AT : 1
-// BT : 3
-// Enter the arrival time and brust time for process 2 :
-// AT : 2
-// BT : 4
-// Enter the arrival time and brust time for process 3 :
-// AT : 1
-// BT : 2
-// Enter the arrival time and brust time for process 4 :
-// AT : 4
-// BT : 4
-//  AT : Arrival time
-// CT : Complete time
-//  BT : Brust time
-//  TAT : Turn around time
-// WT : Waiting time
+// Enter the arrival time and brust time for process 1 :      
+// AT : 0 8
+// BT : Enter the arrival time and brust time for process 2 : 
+// AT : 1 5
+// BT : Enter the arrival time and brust time for process 3 : 
+// AT : 2 10
+// BT : Enter the arrival time and brust time for process 4 : 
+// AT : 3 11
+// BT : Enter the time Quantum : 6
 
-//  >> non_ preemtive
+
 // Output
+// Process NO  AT  BT   CT   TAT  WT 
 
-// Process NO  AT  BT   CT   TAT  WT
+//      P1      0   8    25    25   17
+//      P2      1   5    11    10   5
+//      P3      2   10    29    27   17
+//      P4      3   11    34    31   20
 
-//      P1      1   3    6    5   2
-//      P2      2   4    10    8   4
-//      P3      1   2    3    2   0
-//      P4      4   4    14    10   6
 
-// Avg TAT : 6
-// Avg WT : 3
 
-/// >>> preemtive
+// Input 2)
 
-// Process NO  AT  BT   CT   TAT  WT   DONE  AT   BT
+// Enter the no of Process : 3
+// Enter the arrival time and brust time for process 1 :      
+// AT : 1 10
+// BT : Enter the arrival time and brust time for process 2 : 
+// AT : 2 5
+// BT : Enter the arrival time and brust time for process 3 : 
+// AT : 3 8
+// BT : Enter the time Quantum : 2
 
-//      P1                                    1   3
-//      P2                                    2   4
-//      P3     3    0     3             1      1   2
-//      P4                                    4   4
+// Process NO  AT  BT   CT   TAT  WT   
 
-// TIME Q = 2
-
-// Process NO  AT  BT   CT   TAT  WT
-
-//      P1      3   0    8    5   2  -1
-//      P2      7   0    12    8   4   -1
-//      P3      1   0    5    2   0    -1
-//      P4      10   0    14    10   6
+//      P1      1   10    24    23   13
+//      P2      2   5    16    14   9  
+//      P3      3   8    22    19   11 
+// Avg TAT : 18
+// Avg WT : 11

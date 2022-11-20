@@ -107,6 +107,19 @@ public:
                 cout << endl;
                 continue;
             }
+            if (word[0] == "(AD,04)")
+            {
+                cout << "           NO MACHINE CODE FOR (AD,04) ";
+                cout << endl;
+                continue;
+            }
+            if (word[0] == "(AD,05)")
+            {
+                cout << "           NO MACHINE CODE FOR (AD,05) ";
+                cout << endl;
+                continue;
+            }
+
             if (word[0] == "(IS,00)")
             {
                 cout << "           " << lc << " " << 00 << " " << 0 << " " << 000;

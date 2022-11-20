@@ -69,8 +69,8 @@ void sjf(int at[], int bt[], int n)
          << "  TAT "
          << " WT " << endl;
     cout << endl;
-    ll sumtat = 0;
-    ll sumwt = 0;
+    float sumtat = 0;
+    float sumwt = 0;
     for (int i = 0; i < n; ++i)
     {
         sumtat += tat[i];
@@ -99,54 +99,55 @@ int main()
     return 0;
 }
 
-// Input
+// Input 1)
+// Enter the no of Process : 5
+// Enter the arrival time and brust time for process 1 :      
+// AT : 2 6
+// BT : Enter the arrival time and brust time for process 2 : 
+// AT : 5 2
+// BT : Enter the arrival time and brust time for process 3 : 
+// AT : 1 8
+// BT : Enter the arrival time and brust time for process 4 : 
+// AT : 0 3
+// BT : Enter the arrival time and brust time for process 5 : 
+// AT : 4 4
+// BT :  AT : Arrival time
 
-// Enter the no of Process : 4
-// Enter the arrival time and brust time for process 1 :
-// AT : 1
-// BT : 3
-// Enter the arrival time and brust time for process 2 :
-// AT : 2
-// BT : 4
-// Enter the arrival time and brust time for process 3 :
-// AT : 1
-// BT : 2
-// Enter the arrival time and brust time for process 4 :
-// AT : 4
-// BT : 4
-//  AT : Arrival time
-// CT : Complete time
-//  BT : Brust time
-//  TAT : Turn around time
-// WT : Waiting time
 
-//  >> non_ preemtive
 // Output
+// Process NO  AT  BT   CT   TAT  WT  
 
-// Process NO  AT  BT   CT   TAT  WT
+//      P1      2   6    15    13   7 
+//      P2      5   2    7    2   0   
+//      P3      1   8    23    22   14
+//      P4      0   3    3    3   0   
+//      P5      4   4    10    6   2  
+// Avg TAT : 9.2
+// Avg WT : 4.6
 
-//      P1      1   3    6    5   2
-//      P2      2   4    10    8   4
-//      P3      1   2    3    2   0
-//      P4      4   4    14    10   6
 
-// Avg TAT : 6
-// Avg WT : 3
 
-/// >>> preemtive
+// Input 2)
 
-// Process NO  AT  BT   CT   TAT  WT   DONE  AT   BT
+// Enter the no of Process : 5
+// Enter the arrival time and brust time for process 1 :      
+// AT : 3 1
+// BT : Enter the arrival time and brust time for process 2 : 
+// AT : 1 4
+// BT : Enter the arrival time and brust time for process 3 : 
+// AT : 4 2
+// BT : Enter the arrival time and brust time for process 4 : 
+// AT : 0 6
+// BT : Enter the arrival time and brust time for process 5 : 
+// AT : 2 3
+// BT :  AT : Arrival time
 
-//      P1                                    1   3
-//      P2                                    2   4
-//      P3     3    0     3             1      1   2
-//      P4                                    4   4
+// Process NO  AT  BT   CT   TAT  WT 
 
-// TIME Q = 2
-
-// Process NO  AT  BT   CT   TAT  WT
-
-//      P1      3   0    8    5   2  -1
-//      P2      7   0    12    8   4   -1
-//      P3      1   0    5    2   0    -1
-//      P4      10   0    14    10   6
+//      P1      3   1    4    1   0  
+//      P2      1   4    6    5   1  
+//      P3      4   2    8    4   2   
+//      P4      0   6    16    16   10
+//      P5      2   3    11    9   6  
+// Avg TAT : 7
+// Avg WT : 3.8
