@@ -1,0 +1,1 @@
+{"name":"Local: bully","url":"d:\\zz_SEM_5\\lp1\\OS\\OS\\DS_Election_Algorithm\\bully.cpp","tests":[{"id":1668938411640,"input":"6\n1 3\n1 4\n1 6\n1 5\n1 7 \n1 2\n26\n1 3\n1 4\n1 6\n1 5\n1 7 \n1 2\n2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\zz_SEM_5\\lp1\\OS\\OS\\DS_Election_Algorithm\\bully.cpp","group":"local","local":true}
