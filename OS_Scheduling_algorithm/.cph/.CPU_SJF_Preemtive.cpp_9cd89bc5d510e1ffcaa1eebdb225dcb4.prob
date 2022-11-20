@@ -1,1 +1,0 @@
-{"name":"Local: CPU_SJF_Preemtive","url":"d:\\zz_SEM_5\\lp1\\OS\\OS\\Scheduling_algorithm\\CPU_SJF_Preemtive.cpp","tests":[{"id":1668876367545,"input":"4\n1 3\n2 4\n1 2\n4 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\zz_SEM_5\\lp1\\OS\\OS\\Scheduling_algorithm\\CPU_SJF_Preemtive.cpp","group":"local","local":true}
