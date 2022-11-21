@@ -131,6 +131,8 @@ public:
             if (word[0] == "(DL,02)")
             {
                 cout << "     " << lc;
+                lc += strtoint(word[1].substr(3, 1)); // '(c,2)'
+                continue;
             }
             if (word[0].substr(1, 2) == "IS" && word[0].substr(4, 2) != "00")
             {

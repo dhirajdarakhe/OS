@@ -1,0 +1,1 @@
+{"name":"Local: CPU_RR_Preemtive","url":"d:\\zz_SEM_5\\lp1\\OS\\OS\\OS_Scheduling_algorithm\\CPU_RR_Preemtive.cpp","tests":[{"id":1669019648247,"input":"4\n0 8\n1 4\n2 9\n3 5\n2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\zz_SEM_5\\lp1\\OS\\OS\\OS_Scheduling_algorithm\\CPU_RR_Preemtive.cpp","group":"local","local":true}
