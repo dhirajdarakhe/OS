@@ -135,7 +135,7 @@ public:
       }
 
       // Replace
-      for (auto &x : temp_kptab)
+      for (auto &x : temp_kptab)   //  Here & is Important to acess the address for replacement
       {
         if (x.first == key)
           x.second = para;
