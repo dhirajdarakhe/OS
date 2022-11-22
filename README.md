@@ -2,5 +2,5 @@
 # SP System Programming
 # DS Distributed System
 
-Laboraty Practical 1 Assignments
+Laboratory Practical 1 Assignments
 
